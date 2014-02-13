@@ -1,0 +1,36 @@
+# Schema for the configuration files of the kingdom module.
+
+kingdom.network.*:
+  type: mapping
+  label: 'Kingdom Network'
+  mapping:
+    id:
+      type: string
+      label: 'Machine-readable name'
+    uuid:
+      type: string
+      label: 'UUID'
+    label:
+      type: label
+      label: 'Name'
+    description:
+      type: text
+      label: 'Description'
+    pullURL:
+      type: uri
+      label: 'Pull URL'
+    pushURL:
+      type: uri
+      label: 'Push URL'
+    pushUser:
+      type: string
+      label: 'Username'
+    pushPassword:
+      type: string
+      label: 'Password'
+    settings:
+      type: undefined
+      label: 'Network Settings'
+    localSettings:
+      type: undefined
+      label: 'Local Settings'
